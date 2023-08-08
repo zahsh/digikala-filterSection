@@ -1,0 +1,76 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    direction:rtl;
+    font-size: 14px;
+    font-family: "vazir";
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    font-size: 0.8rem;
+}
+
+@font-face {
+    font-family: "vazir";
+    src: url(../fonts/vazir-font-v16.1.0/Vazir.woff2) format("woff2");
+}
+
+.products .card {
+    border: 1px solid whitesmoke !important;
+}
+
+.products .card-body {
+    font-size: 0.8rem;
+}
+
+.products .card-text {
+    -webkit-line-clamp: 2;
+    overflow: hidden;
+    height: 45px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.filter {
+    position: relative;
+    top: 0;
+    height: 100vh;
+    overflow-y: auto;
+    box-shadow: 0 0 5px rgba(220, 220, 220, 0.073) inset;
+    text-align: left;
+}
+
+::-webkit-scrollbar {
+    width: 0.5rem;
+}
+
+::-webkit-scrollbar-track {
+    background-color: rgb(255, 255, 255);
+    border-radius: 1rem;
+}
+
+::-webkit-scrollbar-thumb {
+    border-radius: 0.6rem;
+    background: linear-gradient(rgb(122, 213, 255),rgb(255, 199, 79));
+}
+
+.col.bg-danger{
+    height: 300px;
+    overflow-y: auto;
+    margin: 3rem 0;
+}
+
+.col.bg-primary {
+    height: 300px;
+    overflow-y: auto;
+    margin: 3rem 0;
+}
